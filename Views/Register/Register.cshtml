@@ -1,0 +1,271 @@
+@model Registration.Models.RegistrationModel
+
+@{
+    ViewData["Title"] = "Registration";
+}
+
+<h3>Registration</h3>
+<form asp-controller="Register" asp-action="Register" method="post" autocomplete="off">
+    <div asp-validation-summary="ModelOnly"></div>
+    <section class="mt-4 card p-4">
+      <h5>Personal Information</h5>
+      <div class="form-row mt-3">
+        <div class="col-md-4 mb-3 pr-md-4">
+          <label asp-for="FirstName">First Name*</label>
+          <input
+            class="form-control"
+            asp-for="FirstName"
+            placeholder="First Name"
+          />
+          <span asp-validation-for="FirstName"></span>
+        </div>
+        <div class="col-md-4 mb-3 px-md-2">
+          <label asp-for="MiddleName">Middle Name</label>
+          <input
+            class="form-control"
+            asp-for="MiddleName"
+            placeholder="Middle Name"
+          />
+          <span asp-validation-for="MiddleName"></span>
+        </div>
+        <div class="col-md-4 mb-3 pl-md-4">
+          <label asp-for="LastName">Last Name*</label>
+          <input
+            class="form-control"
+            asp-for="LastName"
+            placeholder="Last Name"
+          />
+          <span asp-validation-for="LastName"></span>
+        </div>
+      </div>
+      <div class="form-row mt-3">
+        <div class="col-md-4 mb-3 pr-md-4">
+          <label asp-for="Gender">Gender*</label>
+          <select class="custom-select" asp-for="Gender">
+            <option selected disabled>Select Gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+          </select>
+          <span asp-validation-for="Gender"></span>
+        </div>
+        <div class="col-md-4 mb-3 px-md-2">
+          <label asp-for="DateOfBirth">Date of Birth*</label>
+          <input
+            class="form-control"
+            asp-for="DateOfBirth"
+            placeholder="DD/MM/YYYY"
+          />
+          <span asp-validation-for="DateOfBirth"></span>
+        </div>
+        <div class="col-md-4 mb-3 pl-md-4">
+          <label asp-for="Contact">Contact No.*</label>
+          <input
+            class="form-control"
+            asp-for="Contact"
+            placeholder="Contact No."
+          />
+          <span asp-validation-for="Contact"></span>
+        </div>
+      </div>
+      <div class="form-row mt-3">
+        <div class="col-md-4 mb-3 pr-md-4">
+          <label asp-for="Email">Email ID*</label>
+          <input
+            class="form-control"
+            asp-for="Email"
+            placeholder="Email ID"
+          />
+          <span asp-validation-for="Email"></span>
+        </div>
+        <div class="col-md-4 mb-3 px-md-2">
+          <label asp-for="IdentityType">Identity Type*</label>
+          <select
+            class="custom-select"
+            asp-for="IdentityType"
+          >
+            <option selected disabled>Select Identity Type</option>
+            <option value="Voter">Voter ID</option>
+            <option value="PAN">PAN</option>
+            <option value="Aadhaar">Aadhaar</option>
+            <option value="Driving">Driving License</option>
+            <option value="Passport">Passport</option>
+          </select>
+          <span asp-validation-for="IdentityType"></span>
+        </div>
+        <div class="col-md-4 mb-3 pl-md-4">
+          <label asp-for="IdentityValue">Identity No.*</label>
+          <input
+            class="form-control"
+            name="IdentityValue"
+            placeholder="Identity No."
+          />
+          <span asp-validation-for="IdentityValue"></span>
+        </div>
+      </div>
+    </section>
+    <section class="mt-4 card p-4">
+      <h5>Education Information</h5>
+      <div class="form-row mt-3">
+        <div class="col-md-4 mb-3 pr-md-4">
+          <label asp-for="SchoolPercentage">
+            10<sup>th</sup> Percentage*
+          </label>
+          <input
+            class="form-control"
+            asp-for="SchoolPercentage"
+            placeholder="Enter Percentage"
+          />
+          <span asp-validation-for="SchoolPercentage"></span>
+        </div>
+        <div class="col-md-4 mb-3 px-md-2">
+          <label asp-for="HighSchoolPercentage">
+            12<sup>th</sup> Percentage*
+          </label>
+          <input
+            class="form-control"
+            asp-for="HighSchoolPercentage"
+            placeholder="Enter Percentage"
+          />
+          <span asp-validation-for="HighSchoolPercentage"></span>
+        </div>
+      </div>
+      <div class="form-row mt-3">
+        <div class="col-md-4 mb-3 pr-md-4">
+          <label asp-for="Qualification">Qualification*</label>
+          <select
+            class="custom-select"
+            asp-for="Qualification"
+          >
+            <option selected disabled>Select Qualification</option>
+            <option value="B. Sc">B.Sc</option>
+            <option value="BCA">BCA</option>
+            <option value="B. Tech">B. Tech</option>
+            <option value="B. Engg">B. Engg</option>
+            <option value="M. Sc">M. Sc</option>
+            <option value="MCA">MCA</option>
+            <option value="M. Tech">M. Tech</option>
+            <option value="Other">Other</option>
+          </select>
+          <span asp-validation-for="Qualification"></span>
+        </div>
+        <div class="col-md-4 mb-3 px-md-2">
+          <label asp-for="Stream">Stream*</label>
+          <input
+            class="form-control"
+            asp-for="Stream"
+            placeholder="Enter Stream"
+          />
+          <span asp-validation-for="Stream"></span>
+        </div>
+        <div class="col-md-4 mb-3 pl-md-4">
+          <label asp-for="CollegeName">College Name*</label>
+          <input
+            class="form-control"
+            asp-for="CollegeName"
+            placeholder="College Name"
+          />
+          <span asp-validation-for="CollegeName"></span>
+        </div>
+      </div>
+      <div class="form-row mt-3">
+        <div class="col-md-4 mb-3 pr-md-4">
+          <label asp-for="University">University*</label>
+          <input
+            class="form-control"
+            asp-for="University"
+            placeholder="Enter University"
+          />
+          <span asp-validation-for="University"></span>
+        </div>
+        <div class="col-md-4 mb-3 px-md-2">
+          <label asp-for="YearOfPassing">Year of Passing*</label>
+          <select
+            class="custom-select"
+            asp-for="YearOfPassing"
+          >
+            <option selected disabled>Select Year of Passing</option>
+            <option value="2015">2015</option>
+            <option value="2016">2016</option>
+            <option value="2017">2017</option>
+            <option value="2018">2018</option>
+            <option value="2019">2019</option>
+          </select>
+          <span asp-validation-for="YearOfPassing"></span>
+        </div>
+        <div class="col-md-4 mb-3 pl-md-4">
+          <label asp-for="CollegePercentage">Percentage/CGPA*</label>
+          <input
+            class="form-control"
+            asp-for="CollegePercentage"
+            placeholder="Enter Percentage/CGPA"
+          />
+          <span asp-validation-for="CollegePercentage"></span>
+        </div>
+      </div>
+    </section>
+    <section class="mt-4 card p-4">
+      <h5>Drive Information</h5>
+      <div class="form-row mt-3">
+        <div class="col-md-4 mb-3 pr-md-4">
+          <label asp-for="DriveType">Drive Type*</label>
+          <select class="custom-select" id="driveType" asp-for="DriveType" required>
+            <option selected disabled>Select Drive Type</option>
+            <option value="Off Campus">Off Campus</option>
+            <option value="On Campus">On Campus</option>
+          </select>
+          <span asp-validation-for="DriveType"></span>
+        </div>
+        <div class="col-md-4 mb-3 px-md-2">
+          <label asp-for="Venue">Venue*</label>
+          <select class="custom-select" id="venue" asp-for="Venue" required>
+            <option selected disabled>Select Venue</option>
+            <option value="Pratian Technologies, Bangalore">
+              Pratian Technologies, Bangalore
+            </option>
+            <option value="Sugamya Academy For Excellence, Mysore">
+              Sugamya Academy For Excellence, Mysore
+            </option>
+          </select>
+          <span asp-validation-for="Venue"></span>
+        </div>
+        <div class="col-md-4 mb-3 px-md-2">
+          <label asp-for="Reference">Reference</label>
+          <select class="custom-select" id="Reference">
+            <option selected value="">Select Reference</option>
+            <option value="Friends">
+              Friends
+            </option>
+            <option value="Social Sites">
+              Social Sites
+            </option>
+            <option value="Fresher's World">
+              Fresher's World
+            </option>
+            <option value="Others">
+              Others
+            </option>
+          </select>
+          <span asp-validation-for="Reference"></span>
+        </div>
+      <div class="py-2 input-group" style="display:none" id="PleaseSpecify">
+        <div class="input-group-prepend">
+          <span class="input-group-text">Please Specify</span>
+        </div>
+        <textarea class="form-control" aria-label="With textarea" asp-for="Reference" id="textarea"></textarea>
+        </div>
+      </div>
+    </section>
+    <div class="py-4 text-center">
+      <button
+        class="btn btn-primary mx-auto"
+        style="width: 200px;"
+        type="submit"
+      >
+        Register
+      </button>
+    </div>
+  
+</form>
+@section Scripts {
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+}
