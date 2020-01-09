@@ -1,0 +1,50 @@
+{
+  "FilePath": "/home/vidyanand/Desktop/mvc/Registration.csproj",
+  "Configuration": {
+    "ConfigurationName": "MVC-3.0",
+    "LanguageVersion": "3.0",
+    "Extensions": [
+      {
+        "ExtensionName": "MVC-3.0"
+      }
+    ]
+  },
+  "ProjectWorkspaceState": {
+    "TagHelpers": [],
+    "CSharpLanguageVersion": 800
+  },
+  "RootNamespace": "Registration",
+  "Documents": [
+    {
+      "FilePath": "/home/vidyanand/Desktop/mvc/Views/Shared/_Layout.cshtml",
+      "TargetPath": "Views/Shared/_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/vidyanand/Desktop/mvc/Views/Shared/_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Views/Shared/_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/vidyanand/Desktop/mvc/Views/_ViewImports.cshtml",
+      "TargetPath": "Views/_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/vidyanand/Desktop/mvc/Views/_ViewStart.cshtml",
+      "TargetPath": "Views/_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/vidyanand/Desktop/mvc/Views/Register/Submitted.cshtml",
+      "TargetPath": "Views/Register/Submitted.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/vidyanand/Desktop/mvc/Views/Register/Register.cshtml",
+      "TargetPath": "Views/Register/Register.cshtml",
+      "FileKind": "mvc"
+    }
+  ],
+  "SerializationFormat": "0.2"
+}
